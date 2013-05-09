@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+
+	dw_verdegris.xml
+       
+      Copyright 2013 Miguel Rafael Esteban Martín <miguel.esteban@logicaalternativa.com>
+      
+      This program is free software; you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation; either version 2 of the License, or
+      (at your option) any later version.
+      
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+      
+      You should have received a copy of the GNU General Public License
+      along with this program; if not, write to the Free Software
+      Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+      MA 02110-1301, USA.
+
+ -->
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+
+ 
+<!-- Color de fondo gris -->
+<item android:id="@android:id/background">
+      <shape>
+        <!-- radius background of progressbar -->
+        <corners android:radius="10dip" />
+        <gradient
+                android:startColor="#e6e6e6"
+                android:centerColor="#cccccc"
+                android:centerY="0.75"
+                android:endColor="#b3b3b3"
+                android:angle="270" />
+    </shape>
+</item>
+
+<!-- Color de la barra verde  -->
+<item android:id="@android:id/progress" >
+    <clip>
+        <shape>
+            <!-- radius of secundary progress -->
+            <corners
+                android:radius="10dip" />
+            	<gradient
+	                android:startColor="#94bd5e"
+	                android:centerColor="#5c8526"
+	                android:centerY="0.75"
+	                android:endColor="#355e00"
+	                android:angle="270"
+       			 />
+        </shape>
+    </clip>
+</item>
+ 
+<!-- Progreso secundario No se usa en el ejemplo--> 
+<!-- <item android:id="@android:id/secondaryProgress"> -->
+<!--     <clip> -->
+<!--         <shape> -->
+<!--             <corners android:radius="5dip" /> -->
+<!--             <gradient -->
+<!--                     android:startColor="#000000" -->
+<!--                     android:centerColor="#80ffb600" -->
+<!--                     android:centerY="0.75" -->
+<!--                     android:endColor="#a0ffcb00" -->
+<!--                     android:angle="270" -->
+<!--             /> -->
+<!--         </shape> -->
+<!--     </clip> -->
+<!-- </item> -->
+ 
+</layer-list>

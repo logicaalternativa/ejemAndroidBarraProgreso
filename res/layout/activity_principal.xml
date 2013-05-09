@@ -1,0 +1,73 @@
+<!-- 
+
+	activity_principal.xml
+       
+      Copyright 2013 Miguel Rafael Esteban Martín <miguel.esteban@logicaalternativa.com>
+      
+      This program is free software; you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation; either version 2 of the License, or
+      (at your option) any later version.
+      
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+      
+      You should have received a copy of the GNU General Public License
+      along with this program; if not, write to the Free Software
+      Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+      MA 02110-1301, USA.
+
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pricipal" >
+    
+    
+	     
+	<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_alignParentTop="true"				    	
+		android:layout_centerHorizontal="true"
+	    >
+	    <RadioButton android:id="@+id/verde_gris"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="@string/verde_gris"
+	        android:onClick="onRadioButtonClicked"/>
+	    <RadioButton android:id="@+id/amarillo_azul"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/amarillo_azul"
+	        android:onClick="onRadioButtonClicked"/>
+	</RadioGroup>
+	     
+     <ProgressBar
+			android:id="@+id/barraProgreso"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+	    	android:paddingLeft="15sp"
+			android:paddingRight="15sp"
+			android:paddingTop="20sp"
+			android:minHeight="40sp"
+			android:max="100"
+			android:progressDrawable="@drawable/dw_verdegris"
+           />
+	
+	<Button android:id="@+id/inicio"      	
+	        android:text="@string/empezar" 			 		 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentBottom="true"	
+             android:textSize="25sp" 			    	
+      		/>
+
+</RelativeLayout>

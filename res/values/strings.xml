@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">[LogicaAlternativa.com] Barra de Progreso</string>
+    <string name="verde_gris">Verde-Gris</string>
+    <string name="amarillo_azul">Amarillo-Azul</string>
+    <string name="empezar">Empezar</string>
+    <string name="menu_settings">Ajustes</string>
+
+</resources>
